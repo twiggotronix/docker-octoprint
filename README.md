@@ -39,7 +39,7 @@ The easiest way I found to get webcam support is to run mjpg_streamer on the hos
 mjpg_streamer -i "/usr/local/lib/mjpg-streamer/input_uvc.so -n -f 10 -r 1280x720" -o "/usr/local/lib/mjpg-streamer/output_http.so -p 8090 -w /usr/local/share/mjpg-streamer/www"
 ```
 
-I have only tried thois with one camera so far but I assume it is possible with multiple cameras by adding the -d option in the input plugin and assigning a different port to the output plugin.
+I have only tried this with one camera so far but I assume it is possible with multiple cameras by adding the -d option in the input plugin and assigning a different port to the output plugin.
 
 ### Installing mjpg_streamer
 
