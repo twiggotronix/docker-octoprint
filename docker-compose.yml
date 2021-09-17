@@ -1,0 +1,16 @@
+version: '2.2'
+
+services:
+  octoprint-wanhao-d12-0:
+    restart: unless-stopped
+    image: octoprint/octoprint
+    container_name: octoprint-wanhao-d12-0
+    ports:
+      - 3000:5000
+    devices:
+      - /dev/wanhao-d12-0:/dev/ttyACM0
+    volumes:
+     - wanhao-d12-0-data:/home/octoprint
+
+volumes:
+  wanhao-d12-0-data:
